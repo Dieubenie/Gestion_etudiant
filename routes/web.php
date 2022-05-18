@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EtudiantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('formulaire', [EtudiantController::class, 'create'])->name('formulaire');
+Route::get('/', [EtudiantController::class, 'accueil']);
+Route::post('insertion', [EtudiantController::class, 'store'])->name('insertion');
+Route::get('liste', [EtudiantController::class, 'index'])->name('liste');
