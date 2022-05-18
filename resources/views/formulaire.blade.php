@@ -2,9 +2,10 @@
 
 <head>
     <title>formulaire</title>
-</head>
 <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.css') }}">
+
+</head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">

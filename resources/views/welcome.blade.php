@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Accueil</title>
-
-    <!-- Fonts -->
     <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.css') }}">
-
+</head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
         <div class="container-fluid">

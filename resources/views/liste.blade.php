@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.css') }}">
 </head>
-<link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('style/bootstrap/css/bootstrap.css') }}">
+
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
