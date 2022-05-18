@@ -46,28 +46,28 @@
             @csrf
         <div class="row">
             <div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;" >NOM</label>
+				<label class="col-sm-3 control-label"  >NOM</label>
 				<div class="col-sm-6">
 				<input type="text" name="nom" class="form-control" placeholder="Nom">
 				</div>
 				</div>
 
                 <div class="form-group mb-3" >
-                    <label class="col-sm-3 control-label" style=" text-align: left;">PRENOM</label>
+                    <label class="col-sm-3 control-label" >PRENOM</label>
                     <div class="col-sm-6">
                     <input type="text" name="prenom" class="form-control" placeholder="Prénom">
                     </div>
                     </div>
 
                     <div class="form-group mb-3" >
-                        <label class="col-sm-3 control-label" style=" text-align: left;">AGE</label>
+                        <label class="col-sm-3 control-label" >AGE</label>
                         <div class="col-sm-6">
                         <input type="number" name="age" class="form-control" placeholder="age">
                         </div>
                         </div>
 
                     <div class="form-group mb-3">
-                         <label class="col-sm-3 control-label" style=" text-align: left;">GENRE</label>
+                         <label class="col-sm-3 control-label">GENRE</label>
                          <div class="col-sm-6">
                          <select class="form-select" type="text" aria-label="Default select example" name="genre"  placeholder="genre">
                          <option selected > Genre </option>
@@ -78,21 +78,21 @@
                          </div>
 
                          <div class="form-group mb-3">
-                            <label class="col-sm-3 control-label" style=" text-align: left;" >ADRESSE</label>
+                            <label class="col-sm-3 control-label" >ADRESSE</label>
                             <div class="col-sm-6">
                             <input type="text" name="adresse" class="form-control" placeholder="Adresse">
                             </div>
                             </div>
 
                          <div class="form-group mb-3">
-                            <label class="col-sm-3 control-label" style=" text-align: left;">TELEPHONE</label>
+                            <label class="col-sm-3 control-label" >TELEPHONE</label>
                             <div class="col-sm-6">
                             <input type="number" name="telephone" class="form-control" placeholder="Telephone">
                             </div>
                             </div>
 
                             <div class="form-group mb-3">
-                                <label class="col-sm-3 control-label" style=" text-align: left;" >EMAIL</label>
+                                <label class="col-sm-3 control-label" >EMAIL</label>
                                 <div class="col-sm-6">
                                 <input type="text" name="mail" class="form-control" placeholder="Email">
                                 </div>

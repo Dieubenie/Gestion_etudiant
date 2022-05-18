@@ -30,7 +30,7 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" id="myInput" onkeyup="myFunction()" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-warning" type="submit">Search</button>
             </form>
           </div>
@@ -46,7 +46,7 @@
         <a href="{{route('formulaire')}}">
             <button class="btn btn-success mb-3" style="margin-left: 1000;">Formulaire</button>
         </a>
-        <table class="table table-striped table-bordered table-hover">
+        <table id="myTable" class="table table-striped table-bordered table-hover">
 
             <thead>
               <tr>
@@ -81,5 +81,26 @@
     <footer class=" bg-dark mt-3" style="height: 10vh;"> <br>
         <h3 style="text-align: center; font-family: arial; color: white;">Copyright FBE</h3>
       </footer>
+
+      <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
 </body>
 </html>
